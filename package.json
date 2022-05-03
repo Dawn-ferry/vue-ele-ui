@@ -5,10 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "package": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui --dest vue-ele-ui",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "catking-ui": "^1.1.0",
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.8",
     "vue": "^2.6.11"
   },
   "devDependencies": {

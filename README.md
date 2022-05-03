@@ -1,24 +1,5 @@
-# npm-demo
+打包命令解释：
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+--target lib 关键字 指定打包的目录
+--name 打包后的文件名字
+--dest 打包后的文件夹的名称
