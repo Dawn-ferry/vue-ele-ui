@@ -2376,11 +2376,6 @@ caseless@~0.12.0:
   resolved "https://registry.npmmirror.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==
 
-catking-ui@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/catking-ui/-/catking-ui-1.1.0.tgz#456327bc9ea95af71f77aaebdabc2501ebd65eb7"
-  integrity sha512-ctRyxe91pkT+EPhwKzgW46JwGgORpLW1P7zLhEbfoj/yU7rqRLswlMIKYwu8YqZngNRbCM2RhvzN69vAUXwaDQ==
-
 chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.npmmirror.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"

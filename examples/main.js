@@ -6,10 +6,9 @@ import 'element-ui/lib/theme-chalk/index.css';
 // import catkingUI from 'catking-ui';
 // import 'catking-ui/catKing-ui.css';
 // 本地测试
-import vueEleUI from '../vue-ele-ui/vue-ele-ui.common';
-import '../vue-ele-ui/vue-ele-ui.css';
+import VueEleUI from './../packages/index';
 Vue.use(ElementUI);
-Vue.use(vueEleUI);
+Vue.use(VueEleUI);
 
 Vue.config.productionTip = false;
 

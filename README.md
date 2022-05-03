@@ -1,8 +1,24 @@
-# vue-ele-ui
+# 重构 element 部分组件
 
-重构 elemen 部分组件
-打包命令解释：
+# 安装
 
---target lib 关键字 指定打包的目录
---name 打包后的文件名字
---dest 打包后的文件夹的名称
+```
+npm i vue-ele-ui -S
+```
+
+# 使用
+
+在 main.js 中写入以下内容：
+
+```
+import Vue from 'vue';
+import VueEleUI from '../vue-ele-ui/vue-ele-ui.common';
+import '../vue-ele-ui/vue-ele-ui.css';
+import App from './App.vue';
+Vue.use(VueEleUI);
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+});
+```
