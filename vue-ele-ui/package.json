@@ -1,0 +1,15 @@
+{
+  "name": "vue-ele-ui",
+  "version": "1.0.1",
+  "description": "重构部分elementUI组件",
+  "main": "vue-ele-ui.common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "elementUI"
+  ],
+  "author": "hanshao",
+  "license": "ISC"
+}
