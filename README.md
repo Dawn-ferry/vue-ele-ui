@@ -1,12 +1,12 @@
 # 重构 element 部分组件
 
-# 安装
+## 安装
 
 ```
 npm i vue-ele-ui -S
 ```
 
-# 使用
+## 使用
 
 在 main.js 中写入以下内容：
 

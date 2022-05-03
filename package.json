@@ -1,7 +1,9 @@
 {
   "name": "vue-ele-ui",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.5.1",
+  "private": false,
+  "license": "ISC",
+  "author": "hanshao",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -10,6 +12,21 @@
     "lib": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui && vue-cli-service build --all --no-clean",
     "lib2": "vue-cli-service build --target lib --name vue-ele-ui --dest lib packages/index.js"
   },
+  "main": "lib/vue-ele-ui.common.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dawn-ferry/vue-ele-ui"
+  },
+  "files": [
+    "lib",
+    "src",
+    "packages"
+  ],
+  "keywords": [
+    "elementUI",
+    "vue",
+    "components"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.15.8",
