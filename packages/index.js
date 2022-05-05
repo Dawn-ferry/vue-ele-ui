@@ -1,6 +1,9 @@
 import reTable from './reTable';
+
+import table from '../packages/elementUI/table';
+// import TableColumn from '../packages/elementUI/table-column';
 import Vue from 'vue';
-const coms = [reTable];
+const coms = [reTable, table];
 /* 
 安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。
 如果插件是一个函数，它会被作为 install 方法。install 方法调用时，会将 Vue 作为参数传入。
@@ -9,6 +12,7 @@ const coms = [reTable];
 
 当 install 方法被同一个插件多次调用，插件将只会被安装一次。
 */
+// const elementUI = window.elementUI || _elementUI;
 
 // 定义install 方法，接收Vue作为参数，如果使用use注册插件，则所有的组件都将被注册
 const install = function () {
@@ -30,4 +34,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 const VueEleUI = { install };
 export default VueEleUI; // 这个方法以后再使用的时候可以被use调用
-// export { install };
+export { install };
