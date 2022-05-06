@@ -1,6 +1,6 @@
 {
   "name": "vue-ele-ui",
-  "version": "1.0.8",
+  "version": "1.0.14",
   "private": false,
   "license": "ISC",
   "author": "hanshao",
@@ -38,6 +38,7 @@
     "@vue/cli-plugin-eslint": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
     "babel-eslint": "^10.1.0",
+    "copy-webpack-plugin": "^10.2.4",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",

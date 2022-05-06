@@ -46,5 +46,9 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
+.wrap{
+  height: 100%;
+}
 </style>
+
