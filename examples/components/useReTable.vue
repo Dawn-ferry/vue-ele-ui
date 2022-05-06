@@ -1,33 +1,3 @@
-# Refactoring some components for  elementUI
-##  Install
-
-```
-npm i element-ui vue-ele-ui -S
-```
-
-##  Quick Start
-
-在 main.js 中写入以下内容：
-```
-import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-import VueEleUI from '../vue-ele-ui/vue-ele-ui.common';
-import '../vue-ele-ui/vue-ele-ui.css';
-import App from './App.vue';
-Vue.use(ElementUI);
-Vue.use(VueEleUI);
-new Vue({
-  el: '#app',
-  render: h => h(App)
-});
-```
-
-## Case Shows
-```
-tableData    required: true
-filterColums  required: true
-other parameter follow docs of elementUI
 <template>
   <div class="useReTable">
     <reTable ref="multipleTable" :tableData="tableData" :filterColums="filterColums" selectType="selection" @handleSelect="handleSelectFn">
@@ -169,5 +139,4 @@ export default {
   }
 }
 </script>
-```
-## other components are being updated
+
