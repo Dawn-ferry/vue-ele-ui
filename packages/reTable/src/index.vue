@@ -1,6 +1,6 @@
 
 <template>
-  <div class="reTable">
+  <div class="reTable page-main">
     <div class="wrap">
       <el-table ref="multipleTable" :data="tableData" tooltip-effect="dark" style="width: 100%" @selection-change="handleSelectionChange">
         <el-table-column v-if="selectType" type="selection" width="55" />

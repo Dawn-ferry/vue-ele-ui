@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import reTable from './reTable';
+import './style/common.scss'
 
 const coms = [reTable];
 const install = function () {

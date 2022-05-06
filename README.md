@@ -12,15 +12,11 @@ npm i element-ui vue-ele-ui -S
 import Vue from 'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import VueEleUI from '../vue-ele-ui/vue-ele-ui.common';
-import '../vue-ele-ui/vue-ele-ui.css';
+import VueEleUI from 'vue-ele-ui/lib/vue-ele-ui.common';
+import 'vue-ele-ui/lib/vue-ele-ui.css';
 import App from './App.vue';
 Vue.use(ElementUI);
 Vue.use(VueEleUI);
-new Vue({
-  el: '#app',
-  render: h => h(App)
-});
 ```
 
 ## Case Shows
