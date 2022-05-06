@@ -1,6 +1,6 @@
 {
   "name": "vue-ele-ui",
-  "version": "1.5.1",
+  "version": "1.0.6",
   "private": false,
   "license": "ISC",
   "author": "hanshao",
@@ -9,8 +9,8 @@
     "build": "vue-cli-service build",
     "package": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui --dest vue-ele-ui",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui && vue-cli-service build --all --no-clean",
-    "lib2": "vue-cli-service build --target lib --name vue-ele-ui --dest lib packages/index.js"
+    "libUI": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui && vue-cli-service build --all --no-clean",
+    "lib": "vue-cli-service build --target lib --name vue-ele-ui --dest lib packages/index.js"
   },
   "main": "lib/vue-ele-ui.common.js",
   "repository": {

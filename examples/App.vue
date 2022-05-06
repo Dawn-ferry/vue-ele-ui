@@ -25,14 +25,9 @@
 </template>
 
 <script>
-// import reTable from './package/reTable'
-// import reInput from './package/reInput'
 
 export default {
   name: 'App',
-  // components: {
-  //   reTable
-  // },
   data() {
     return {
       // 需要排序的字段
@@ -101,7 +96,7 @@ export default {
           zip: 200333,
           age: 12,
           enable: 1,
-          imgCover: 'https://image.fosunholiday.com/cl/image/20211108/6188d986404385449dc622d1.png'
+          imgCover: 'https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg'
         },
         {
           date: '2016-05-04',
@@ -113,7 +108,7 @@ export default {
           zip: 200333,
           age: 22,
           enable: 1,
-          imgCover: 'https://image.fosunholiday.com/cl/image/20211108/6188ccb8404385449dc5dd14.png'
+          imgCover: `https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg`
         },
 
         {
@@ -126,7 +121,7 @@ export default {
           zip: 200333,
           age: 9,
           enable: 0,
-          imgCover: ''
+          imgCover: 'https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg'
         },
 
         {
