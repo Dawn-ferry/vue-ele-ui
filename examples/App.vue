@@ -1,22 +1,18 @@
 <template>
   <div id="app">
-    <!-- <reButton />
-    <reTable />-->
-    <el-button type="success">成功按钮</el-button>
-    <!-- 使用 -->
     <reTable ref="multipleTable" :tableData="tableData" :filterColums="filterColums" selectType="selection" @handleSelect="handleSelectFn">
       <template v-slot:tableBody="{ scopeData: { row, column } }">
         <template v-if="column.property === 'enable'">
-          <div v-if="row.enable === 0" style="color: #d9001b">禁用</div>
-          <div v-else style="color: #67c23a">启用</div>
+          <div v-if="row.enable === 0" style="color: #d9001b">disable</div>
+          <div v-else style="color: #67c23a">enable</div>
         </template>
         <template v-else-if="column.property === 'imgCover'">
           <img v-if="row.imgCover" :src="row.imgCover" style="width: 80px; height: 80px" />
         </template>
         <template v-else-if="column.property === 'effectiveDate'">{{ row.date }}~{{ row.endDate }}</template>
         <template v-else-if="column.property === 'edit'">
-          <el-button type="text" size="small" @click="openFn(row)">查看</el-button>
-          <el-button type="text" size="small" @click="editFn(row)">编辑</el-button>
+          <el-button type="text" size="small" @click="openFn(row)">open</el-button>
+          <el-button type="text" size="small" @click="editFn(row)">edit</el-button>
         </template>
         <template v-else>{{ row[column.property] }}</template>
       </template>
@@ -30,21 +26,8 @@ export default {
   name: 'App',
   data() {
     return {
-      // 需要排序的字段
       sortData: ['age'],
-      // filterColums:[],
       filterColums: [
-        // 不需要展示的数据
-        // {
-        //   prop: 'date',
-        //   label: '日期',
-        // },
-        // {
-        //   prop: 'name',
-        //   label: '姓名',
-        //   key: 1,
-        // },
-        // 需要展示的数据
         {
           prop: 'enable',
           label: '是否禁用'
@@ -143,34 +126,18 @@ export default {
   methods: {
     toggleSelection() {
       console.log('this.$refs.multipleTable', this.$refs.multipleTable)
-      // if (rows) {
-      //   rows.forEach((row) => {
-      //     this.$refs.multipleTable.toggleRowSelection(row);
-      //   });
-      // } else {
-      //   this.$refs.multipleTable.clearSelection();
-      // }
     },
     openFn(val) {
-      console.log('查看操作', val)
+      console.log('openFn', val)
     },
     editFn(val) {
-      console.log('编辑操作', val)
+      console.log('editFn', val)
     },
     handleSelectFn(val) {
-      console.log('获取组件选择数据 ', val)
+      console.log('handleSelectFn ', val)
     }
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

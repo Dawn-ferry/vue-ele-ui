@@ -2,8 +2,6 @@ import Vue from 'vue';
 import App from './App.vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-// 包测试
-// 本地测试
 import VueEleUI from './../packages/index';
 Vue.use(ElementUI)
 Vue.use(VueEleUI);
