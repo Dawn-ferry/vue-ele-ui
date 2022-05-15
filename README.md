@@ -9,6 +9,7 @@ npm i element-ui vue-ele-ui -S
 
 在 main.js 中写入以下内容：
 ```
+
 import Vue from 'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';

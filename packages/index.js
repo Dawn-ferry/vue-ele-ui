@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import reTable from './reTable';
-import './style/common.scss'
+import reCard from './reCard';
+import './style/common.scss';
 
-const coms = [reTable];
+const coms = [reTable, reCard];
 const install = function () {
   coms.forEach(com => {
     console.log('com', com);
@@ -14,4 +15,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 const VueEleUI = { install };
-export default VueEleUI; 
+export default VueEleUI;

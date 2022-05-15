@@ -23,3 +23,21 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  width: 100%;
+  /*! autoprefixer: off */
+}
+
+/*溢出省略*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

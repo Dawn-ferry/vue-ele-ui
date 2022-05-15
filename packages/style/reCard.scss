@@ -1,0 +1,25 @@
+$color: saddlebrown;
+.reCard {
+  width: 168px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 8px;
+  box-shadow: 0 6px 10px 0;
+  background-color: #fff;
+  // border: 1px solid $color;
+  font-weight: 400;
+  &-img {
+    height: 112px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-summary {
+    text-align: left;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    // border: 1px solid $color;
+  }
+}

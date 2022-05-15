@@ -10,7 +10,10 @@
     "package": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui --dest vue-ele-ui",
     "lint": "vue-cli-service lint",
     "libUI": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui && vue-cli-service build --all --no-clean",
-    "lib": "vue-cli-service build --target lib --name vue-ele-ui --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name vue-ele-ui --dest lib packages/index.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "main": "lib/vue-ele-ui.common.js",
   "repository": {
@@ -42,8 +45,10 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",
+    "sass": "^1.51.0",
     "sass-loader": "^7.3.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.9.7"
   },
   "eslintConfig": {
     "root": true,
