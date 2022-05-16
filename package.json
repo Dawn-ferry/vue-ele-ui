@@ -20,6 +20,7 @@
     "type": "git",
     "url": "https://github.com/Dawn-ferry/vue-ele-ui"
   },
+  "homepage": "https://dawn-ferry.github.io/vue-ele-ui/",
   "files": [
     "lib",
     "src",
