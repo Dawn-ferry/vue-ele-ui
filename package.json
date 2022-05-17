@@ -1,15 +1,14 @@
 {
   "name": "vue-ele-ui",
-  "version": "1.1.15",
+  "version": "1.1.2",
   "private": false,
   "license": "ISC",
   "author": "hanshao",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "package": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui --dest vue-ele-ui",
+    "package": "vue-cli-service build --target lib ./packages/index.js --name vue-ele-ui --dest vue-ele-ui",
     "lint": "vue-cli-service lint",
-    "libUI": "vue-cli-service build --target lib ./src/package/index.js --name vue-ele-ui && vue-cli-service build --all --no-clean",
     "lib": "vue-cli-service build --target lib --name vue-ele-ui --dest lib packages/index.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
