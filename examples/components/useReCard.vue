@@ -5,7 +5,7 @@
     <!--  -->
     <reCard :imgSrc="igs" :summary="info" />
     <hr />
-    <reCard :imgSrc="imgs" :summary="info">
+    <reCard :imgSrc="imgs" :width="226" :imgHeight="148" :summary="info">
       <template v-slot:footer>
         <div class="footer">
           <span>1,300,017</span>
