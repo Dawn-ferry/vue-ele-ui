@@ -6,13 +6,12 @@ import './style/common.scss';
 const coms = [reTable, reCard];
 const install = function () {
   coms.forEach(com => {
-    console.log('com', com);
     Vue.component(com.name, com);
   });
 };
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
-
-const VueEleUI = { install };
+const VueEleUI = { reCard, reTable, install };
 export default VueEleUI;
+export { reCard, reTable, install };
