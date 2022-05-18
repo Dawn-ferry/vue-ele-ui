@@ -1,12 +1,15 @@
 # vue-ele-ui
 
 ### Install
+
 <hr/>
+
 ```
 npm i element-ui vue-ele-ui -S
 ```
 
 ### Quick Start
+
 <hr/>
 
 在 main.js 中写入以下内容：
@@ -21,15 +24,14 @@ import App from './App.vue';
 Vue.use(ElementUI);
 Vue.use(VueEleUI);
 ```
+
 ### Links
+
 <hr/>
 
-
-* Homepage and documentation：[vue-ele-ui docs](https://dawn-ferry.github.io/vue-ele-ui)
-* issues：
-[vue-ele-ui issues](https://github.com/Dawn-ferry/vue-ele-ui/issues)
-
-
+- Homepage and documentation：[vue-ele-ui docs](https://dawn-ferry.github.io/vue-ele-ui)
+- issues：
+  [vue-ele-ui issues](https://github.com/Dawn-ferry/vue-ele-ui/issues)
 
 <hr/>
 
