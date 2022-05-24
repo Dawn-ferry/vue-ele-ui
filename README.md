@@ -1,5 +1,7 @@
 # vue-ele-ui
 
+[![npm version](https://img.shields.io/npm/v/vuedraggable.svg)](https://www.npmjs.com/package/vue-ele-ui)
+
 ### Install
 
 <hr/>

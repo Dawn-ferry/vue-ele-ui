@@ -1,6 +1,6 @@
 {
   "name": "vue-ele-ui",
-  "version": "1.1.5",
+  "version": " 1.2.0",
   "private": false,
   "license": "ISC",
   "author": "hanshao",
@@ -12,6 +12,7 @@
     "lib": "vue-cli-service build --target lib --name vue-ele-ui --dest lib packages/index.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "publish": "git push && git push --tags && npm publish",
     "deploy": "bash deploy.sh"
   },
   "main": "lib/vue-ele-ui.common.js",
@@ -34,7 +35,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.15.8",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",

@@ -30,6 +30,6 @@ module.exports = {
     //   });
   },
   devServer: {
-    open: true // 是否自动打开浏览器页面
+    open: true
   }
 };
