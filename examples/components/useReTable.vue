@@ -1,6 +1,17 @@
 <template>
   <div class="useReTable">
-    <reTable ref="multipleTable" :tableData="tableData" :filterColums="filterColums" selectType="selection" @handleSelect="handleSelectFn">
+    <reTable
+      ref="multipleTable"
+      :tableData="tableData"
+      :filterColums="filterColums"
+      :height="200"
+      :max-height="300"
+      stripe
+      border
+      highlight-current-row
+      selectType="selection"
+      @handleSelect="handleSelectFn"
+    >
       <template v-slot:tableBody="{ scopeData: { row, column } }">
         <template v-if="column.property === 'enable'">
           <div v-if="row.enable === 0" style="color: #d9001b">disable</div>
@@ -21,7 +32,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'useReTable',
   data() {
@@ -30,43 +40,43 @@ export default {
       filterColums: [
         {
           prop: 'enable',
-          label: '是否禁用'
+          label: '是否禁用',
         },
         {
           prop: 'province',
-          label: '省份'
+          label: '省份',
         },
         {
           prop: 'city',
-          label: '市区'
+          label: '市区',
         },
         {
           prop: 'address',
-          label: '地址'
+          label: '地址',
         },
         {
           prop: 'zip',
-          label: '邮编'
+          label: '邮编',
         },
         {
           prop: 'age',
-          label: '年龄'
+          label: '年龄',
         },
         {
           prop: 'effectiveDate',
-          label: '有效日期'
+          label: '有效日期',
         },
         {
           prop: 'imgCover',
           label: '封面',
-          width: '180'
+          width: '180',
         },
         {
           label: '操作',
           prop: 'edit',
           fixed: 'right',
-          width: '180'
-        }
+          width: '180',
+        },
       ],
       tableData: [
         {
@@ -79,7 +89,7 @@ export default {
           zip: 200333,
           age: 12,
           enable: 1,
-          imgCover: 'https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg'
+          imgCover: 'https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg',
         },
         {
           date: '2016-05-04',
@@ -91,7 +101,7 @@ export default {
           zip: 200333,
           age: 22,
           enable: 1,
-          imgCover: `https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg`
+          imgCover: `https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg`,
         },
 
         {
@@ -104,7 +114,7 @@ export default {
           zip: 200333,
           age: 9,
           enable: 0,
-          imgCover: 'https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg'
+          imgCover: 'https://tva1.sinaimg.cn/large/9bd9b167gy1g2qkwm4hsoj21hc0u04qp.jpg',
         },
 
         {
@@ -117,9 +127,9 @@ export default {
           zip: 200333,
           age: 2,
           enable: 0,
-          imgCover: ''
-        }
-      ]
+          imgCover: '',
+        },
+      ],
     }
   },
   mounted() {},
@@ -135,8 +145,8 @@ export default {
     },
     handleSelectFn(val) {
       console.log('handleSelectFn ', val)
-    }
-  }
+    },
+  },
 }
 </script>
 

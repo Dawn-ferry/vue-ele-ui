@@ -31,38 +31,38 @@ export default {
       ProvideData: [
         {
           value: '选项1',
-          label: '黄金糕'
+          label: '黄金糕',
         },
         {
           value: '选项2',
-          label: '双皮奶'
+          label: '双皮奶',
         },
         {
           value: '选项3',
-          label: '蚵仔煎'
+          label: '蚵仔煎',
         },
         {
           value: '选项4',
-          label: '龙须面'
+          label: '龙须面',
         },
         {
           value: '选项5',
-          label: '北京烤鸭'
-        }
+          label: '北京烤鸭',
+        },
       ],
       ruleForm: {
-        sitelist: []
+        sitelist: [],
       },
       selectTitle: '关联站点(可多选)',
       rules: {
-        sitelist: [{ type: 'array', required: true, message: '请选择', trigger: ['change', 'blur'] }]
-      }
+        sitelist: [{ type: 'array', required: true, message: '请选择', trigger: ['change', 'blur'] }],
+      },
     }
   },
 
   components: {
     useReTable: () => import('./components/useReTable.vue'),
-    useReCard: () => import('./components/useReCard.vue')
+    useReCard: () => import('./components/useReCard.vue'),
   },
   methods: {
     changeFn(val) {
@@ -73,7 +73,7 @@ export default {
     },
     submitForm(formName) {
       console.log('t', this.ruleForm)
-      this.$refs[formName].validate(valid => {
+      this.$refs[formName].validate((valid) => {
         if (valid) {
           alert('submit!')
         } else {
@@ -81,8 +81,8 @@ export default {
           return false
         }
       })
-    }
-  }
+    },
+  },
 }
 </script>
 <style scoped>
