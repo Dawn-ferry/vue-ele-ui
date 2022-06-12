@@ -1,17 +1,26 @@
 <template>
   <div class="useReTable">
     <reTable
+      style="width:900px"
       ref="multipleTable"
       :tableData="tableData"
       :filterColums="filterColums"
-      :height="200"
+      :height="400"
       :max-height="300"
       stripe
       border
       highlight-current-row
-      selectType="selection"
-      @handleSelect="handleSelectFn"
+      :header-cell-style="{ backgroundColor: '#EBEEF5' }"
+      :selection-change="handleSelectionChange"
+      :colType="{selectType:'selection',indexType:'index'}"
     >
+      <template v-slot:beforeCol>
+        <el-table-column label="需要特殊处理的列表放前" prop="tab2" width="90" />
+      </template>
+      <el-table-column label="默认特殊处理的列表放后" prop="tab" width="90" />
+      <template v-slot:afterCol>
+        <el-table-column label="需要特殊处理的列表放后" prop="tab3" width="90" />
+      </template>
       <template v-slot:tableBody="{ scopeData: { row, column } }">
         <template v-if="column.property === 'enable'">
           <div v-if="row.enable === 0" style="color: #d9001b">disable</div>
@@ -20,14 +29,24 @@
         <template v-else-if="column.property === 'imgCover'">
           <img v-if="row.imgCover" :src="row.imgCover" style="width: 80px; height: 80px" />
         </template>
+        <!-- address -->
+        <template v-else-if="column.property === 'address'">
+          <template :show-overflow-tooltip="false">{{row.address}}</template>
+        </template>
+
         <template v-else-if="column.property === 'effectiveDate'">{{ row.date }}~{{ row.endDate }}</template>
         <template v-else-if="column.property === 'edit'">
           <el-button type="text" size="small" @click="openFn(row)">open</el-button>
           <el-button type="text" size="small" @click="editFn(row)">edit</el-button>
         </template>
-        <template v-else>{{ row[column.property] }}</template>
+        <!-- <template v-else>{{ row[column.property] }}</template> -->
       </template>
     </reTable>
+    <div style="margin-top: 20px">
+      <el-button @click="toggleSelection([tableData[1], tableData[2]])">切换第二、第三行的选中状态</el-button>
+      <el-button @click="toggleSelection()">取消选择</el-button>
+      <el-button @click="toggleAllSelection()">All选择</el-button>
+    </div>
   </div>
 </template>
 
@@ -38,6 +57,11 @@ export default {
     return {
       sortData: ['age'],
       filterColums: [
+        {
+          type: 'index',
+          label: '序号',
+          width: 55,
+        },
         {
           prop: 'enable',
           label: '是否禁用',
@@ -53,6 +77,7 @@ export default {
         {
           prop: 'address',
           label: '地址',
+          showOverflowTooltip: false,
         },
         {
           prop: 'zip',
@@ -134,8 +159,18 @@ export default {
   },
   mounted() {},
   methods: {
-    toggleSelection() {
-      console.log('this.$refs.multipleTable', this.$refs.multipleTable)
+    toggleAllSelection() {
+      this.$refs.multipleTable.toggleAllSelection()
+    },
+    toggleSelection(rows) {
+      console.log('toggleSelection', rows)
+      if (rows) {
+        rows.forEach((row) => {
+          this.$refs.multipleTable.toggleRowSelection(row)
+        })
+      } else {
+        this.$refs.multipleTable.clearSelection()
+      }
     },
     openFn(val) {
       console.log('openFn', val)
@@ -143,7 +178,7 @@ export default {
     editFn(val) {
       console.log('editFn', val)
     },
-    handleSelectFn(val) {
+    handleSelectionChange(val) {
       console.log('handleSelectFn ', val)
     },
   },

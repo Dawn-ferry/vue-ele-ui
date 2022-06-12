@@ -1,5 +1,13 @@
 # vue-ele-ui
 
+<!-- -->
+
+[![github](https://img.shields.io/badge/Github-vue--ele--ui-blue)](https://github.com/Dawn-ferry/vue-ele-ui)
+[![npm](https://img.shields.io/badge/npm-vue--ele--ui-red)](https://www.npmjs.com/package/vue-ele-ui)
+![MIT License](https://img.shields.io/badge/License-MIT-green)
+
+<!-- -->
+
 ### Install
 
 <hr/>
