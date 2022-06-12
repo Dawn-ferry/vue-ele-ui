@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>标签选择器组件 | Vue-ele-ui</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Vue-ele-ui">
+    
+    <link rel="preload" href="/vue-ele-ui/assets/css/0.styles.8c5fd3b6.css" as="style"><link rel="preload" href="/vue-ele-ui/assets/js/app.a070b88e.js" as="script"><link rel="preload" href="/vue-ele-ui/assets/js/2.c6fb3d1c.js" as="script"><link rel="preload" href="/vue-ele-ui/assets/js/13.034b936f.js" as="script"><link rel="prefetch" href="/vue-ele-ui/assets/js/10.cc7898e6.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/11.6bf2f877.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/12.0645c23d.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/3.14273b39.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/4.9fcacc52.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/5.e918acb0.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/6.8cc4f833.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/7.84570d81.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/8.0ae68b25.js"><link rel="prefetch" href="/vue-ele-ui/assets/js/9.6ca7d851.js">
+    <link rel="stylesheet" href="/vue-ele-ui/assets/css/0.styles.8c5fd3b6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-ele-ui/" class="home-link router-link-active"><!----> <span class="site-name">Vue-ele-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-ele-ui/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Dawn-ferry/vue-ele-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/vue-ele-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-ele-ui/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Dawn-ferry/vue-ele-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.npmjs.com/package/vue-ele-ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue-ele-ui/" aria-current="page" class="sidebar-link">vue-ele-ui</a></li><li><a href="/vue-ele-ui/docsCard/" class="sidebar-link">卡片组件</a></li><li><a href="/vue-ele-ui/docsTable/" class="sidebar-link">表格组件</a></li><li><a href="/vue-ele-ui/docsTagSelect/" aria-current="page" class="active sidebar-link">标签选择器组件</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="标签选择器组件"><a href="#标签选择器组件" class="header-anchor">#</a> 标签选择器组件</h1> <h3 id="案例展示"><a href="#案例展示" class="header-anchor">#</a> 案例展示</h3> <p><img src="/vue-ele-ui/test.gif" alt="An image"></p> <h3 id="代码示例"><a href="#代码示例" class="header-anchor">#</a> 代码示例</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form</span> <span class="token attr-name">:model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ruleForm<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:rules</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rules<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ruleForm<span class="token punctuation">&quot;</span></span> <span class="token attr-name">label-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>100px<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>demo-ruleForm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>站点<span class="token punctuation">&quot;</span></span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sitelist<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>reTagSelect</span>
+          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tagSelect<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:selectTitle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>selectTitle<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:selectList</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ProvideData<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">clearable</span>
+          <span class="token attr-name">collapseTags</span>
+          <span class="token attr-name">@setData</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>setData<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ruleForm.sitelist<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">&gt;</span></span>站点<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>reTagSelect</span>
+        <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submitForm(<span class="token punctuation">'</span>ruleForm<span class="token punctuation">'</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>立即创建<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">ProvideData</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">'选项1'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'黄金糕'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">'选项2'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'双皮奶'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">'选项3'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'蚵仔煎'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">'选项4'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'龙须面'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">'选项5'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'北京烤鸭'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">ruleForm</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">sitelist</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">selectTitle</span><span class="token operator">:</span> <span class="token string">'关联站点(可多选)'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">sitelist</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'array'</span><span class="token punctuation">,</span> <span class="token literal-property property">required</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'请选择'</span><span class="token punctuation">,</span> <span class="token literal-property property">trigger</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'change'</span><span class="token punctuation">,</span> <span class="token string">'blur'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">setData</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>ruleForm<span class="token punctuation">.</span>sitelist <span class="token operator">=</span> val<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">submitForm</span><span class="token punctuation">(</span><span class="token parameter">formName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ruleForm<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span>formName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token parameter">valid</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'submit!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'error submit!!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="attributes"><a href="#attributes" class="header-anchor">#</a> Attributes</h3> <hr> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>是否必填</th> <th>默认值</th></tr></thead> <tbody><tr><td>selectTitle</td> <td>设置弹框标题</td> <td>String</td> <td>false</td> <td>-</td></tr> <tr><td>selectList</td> <td>选择器下拉数据</td> <td>Array</td> <td>true</td> <td>-</td></tr> <tr><td>setData</td> <td>获取选择数据</td> <td>function</td> <td>false</td> <td>-</td></tr> <tr><td>clearable</td> <td>是否可以清空选项</td> <td>boolean</td> <td>false</td> <td>-</td></tr> <tr><td>collapseTags</td> <td>多选时是否将选中值按文字的形式展示</td> <td>boolean</td> <td>false</td> <td>-</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-ele-ui/docsTable/" class="prev">
+        表格组件
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-ele-ui/assets/js/app.a070b88e.js" defer></script><script src="/vue-ele-ui/assets/js/2.c6fb3d1c.js" defer></script><script src="/vue-ele-ui/assets/js/13.034b936f.js" defer></script>
+  </body>
+</html>
