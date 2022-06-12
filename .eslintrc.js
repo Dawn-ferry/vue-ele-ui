@@ -1,40 +1,39 @@
 module.exports = {
   root: true,
-
   env: {
     node: true,
   },
-
   rules: {
-    'no-console': 'off',
-    'no-debugger': 'off',
-    'import/prefer-default-export': 'off',
+    // "prettier/prettier": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+    "import/prefer-default-export": "off",
     indent: [
-      'warn',
+      "warn",
       2,
       {
         SwitchCase: 1,
       },
     ],
-    semi: [2, 'never'],
-    'use-isnan': 2,
-    'no-unused-vars': [
+    semi: [2, "always"],
+    "use-isnan": 2,
+    "no-unused-vars": [
       2,
       {
-        vars: 'all',
-        args: 'none',
+        vars: "all",
+        args: "none",
       },
     ],
-    'vue/no-parsing-error': [
+    "vue/no-parsing-error": [
       2,
       {
-        'x-invalid-end-tag': false,
+        "x-invalid-end-tag": false,
       },
     ],
   },
 
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: "babel-eslint",
   },
-  extends: ['plugin:vue/essential'],
-}
+  extends: ["plugin:vue/essential"],
+};

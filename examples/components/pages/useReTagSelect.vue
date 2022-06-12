@@ -20,56 +20,56 @@
 </template>
 <script>
 export default {
-  name: 'useReTagSelect',
+  name: "useReTagSelect",
   data() {
     return {
       ProvideData: [
         {
-          value: '选项1',
-          label: '黄金糕',
+          value: "选项1",
+          label: "黄金糕",
         },
         {
-          value: '选项2',
-          label: '双皮奶',
+          value: "选项2",
+          label: "双皮奶",
         },
         {
-          value: '选项3',
-          label: '蚵仔煎',
+          value: "选项3",
+          label: "蚵仔煎",
         },
         {
-          value: '选项4',
-          label: '龙须面',
+          value: "选项4",
+          label: "龙须面",
         },
         {
-          value: '选项5',
-          label: '北京烤鸭',
+          value: "选项5",
+          label: "北京烤鸭",
         },
       ],
       rules: {
-        sitelist: [{ type: 'array', required: true, message: '请选择', trigger: ['change', 'blur'] }],
+        sitelist: [{ type: "array", required: true, message: "请选择", trigger: ["change", "blur"] }],
       },
-      selectTitle: '关联站点(可多选)',
+      selectTitle: "关联站点(可多选)",
       ruleForm: {
         sitelist: [],
       },
-    }
+    };
   },
   methods: {
     setData(val) {
-      this.ruleForm.sitelist = val
+      this.ruleForm.sitelist = val;
     },
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          alert('submit!')
+          alert("submit!");
         } else {
-          console.log('error submit!!')
-          return false
+          console.log("error submit!!");
+          return false;
         }
-      })
+      });
     },
   },
-}
+};
 </script>
 <style scoped>
 </style>

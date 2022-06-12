@@ -1,23 +1,23 @@
-const path = require('path');
-const resolve = dir => path.join(__dirname, dir);
+const path = require("path");
+const resolve = (dir) => path.join(__dirname, dir);
 module.exports = {
   pages: {
     index: {
-      entry: 'examples/main.js',
-      template: 'public/index.html',
-      filename: 'index.html'
-    }
+      entry: "examples/main.js",
+      template: "public/index.html",
+      filename: "index.html",
+    },
   },
   pluginOptions: {
-    'style-resources-loader': {
-      preProcessor: 'scss',
-      patterns: []
-    }
+    "style-resources-loader": {
+      preProcessor: "scss",
+      patterns: [],
+    },
   },
   // const copyWebpackPlugin = require("copy-webpack-plugin");
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     // alias 设置
-    config.resolve.alias.set('_img', resolve('examples/assets/images'));
+    config.resolve.alias.set("_img", resolve("examples/assets/images"));
     // config.module
     //   .rule('js')
     //   .include.add(__dirname + 'packages')
@@ -30,6 +30,6 @@ module.exports = {
     //   });
   },
   devServer: {
-    open: true
-  }
+    open: true,
+  },
 };

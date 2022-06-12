@@ -16,16 +16,16 @@
 
 <script>
 export default {
-  name: 'Layout',
+  name: "Layout",
   data() {
-    return {}
+    return {};
   },
   components: {
-    useReTable: () => import('./pages/useReTable.vue'),
-    useReCard: () => import('./pages/useReCard.vue'),
-    useReTagSelect: () => import('./pages/useReTagSelect.vue'),
+    useReTable: () => import("./pages/useReTable.vue"),
+    useReCard: () => import("./pages/useReCard.vue"),
+    useReTagSelect: () => import("./pages/useReTagSelect.vue"),
   },
-}
+};
 </script>
 <style lang="scss" scoped>
 </style>

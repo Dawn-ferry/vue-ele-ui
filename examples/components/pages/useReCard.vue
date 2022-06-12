@@ -16,15 +16,15 @@
 </template>
 <script>
 export default {
-  name: 'useReCard',
+  name: "useReCard",
   data() {
     return {
-      igs: require('../../assets/images/test5.png'),
-      imgs: require('_img/test5.png'),
-      info: '苏州市乐营房车酒店营地两天一夜含双早&活动套票&小清新露营嘻嘻嘻～',
-    }
+      igs: require("../../assets/images/test5.png"),
+      imgs: require("_img/test5.png"),
+      info: "苏州市乐营房车酒店营地两天一夜含双早&活动套票&小清新露营嘻嘻嘻～",
+    };
   },
-}
+};
 </script>
 <style lang='scss' scoped>
 .useReCard {
