@@ -1,9 +1,5 @@
 
 <template>
-  <!-- 
-       
- 
-  -->
   <div class="reTable page-main">
     <div class="wrap">
       <el-table
@@ -84,7 +80,7 @@
         >
           <!-- 将  scope解构成{ row, column, $index }需要处理的数据-->
           <template slot-scope="{row, column, $index}">
-            <slot name="tableBody" :scopeData="{ row, column, $index }">{{ item.type==='index' ? $index : row[item.prop] }}</slot>
+            <slot name="tableBody" :scopeData="{ row, column, $index }">{{ row[item.prop] }}</slot>
           </template>
         </el-table-column>
         <!-- 默认下 -->

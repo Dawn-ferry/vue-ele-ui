@@ -1,7 +1,7 @@
-import reTagSelect from './src/index.vue';
+import reTagSelect from './src/index.vue'
 
 reTagSelect.install = function (Vue) {
-  Vue.component(reTagSelect.name, reTagSelect);
-};
+  Vue.component(reTagSelect.name, reTagSelect)
+}
 
-export default reTagSelect;
+export default reTagSelect
