@@ -1,5 +1,7 @@
 <template>
   <div class="useReTable">
+    <reTable />
+    <hr />
     <reTable
       style="width:900px"
       ref="multipleTable"
@@ -57,11 +59,6 @@ export default {
     return {
       sortData: ['age'],
       filterColums: [
-        {
-          type: 'index',
-          label: '序号',
-          width: 55,
-        },
         {
           prop: 'enable',
           label: '是否禁用',

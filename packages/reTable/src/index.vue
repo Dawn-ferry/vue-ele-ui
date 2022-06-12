@@ -97,15 +97,17 @@ export default {
   props: {
     tableData: {
       type: Array,
-      required: true,
+      required: false,
     },
     filterColums: {
       type: Array,
-      required: true,
+      required: false,
     },
     colType: {
       type: Object,
-      default: () => {},
+      default: () => {
+        return {}
+      },
     },
     height: {
       type: [String, Number],
@@ -217,6 +219,9 @@ export default {
     defaultExpandAllFn: function () {
       return this.defaultExpandAll !== undefined
     },
+  },
+  mounted() {
+    console.log('colType', this.colType)
   },
   methods: {
     showOverflowTooltip(val) {
