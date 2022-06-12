@@ -93,7 +93,7 @@
 </template>
 <script>
 export default {
-  name: 'reTable',
+  name: "reTable",
   props: {
     tableData: {
       type: Array,
@@ -106,7 +106,7 @@ export default {
     colType: {
       type: Object,
       default: () => {
-        return {}
+        return {};
       },
     },
     height: {
@@ -119,7 +119,7 @@ export default {
     border: Boolean,
     size: {
       type: String,
-      default: '',
+      default: "",
     },
     fit: {
       type: Boolean,
@@ -135,7 +135,7 @@ export default {
     },
     emptyText: {
       type: String,
-      default: '暂无数据',
+      default: "暂无数据",
     },
     defaultExpandAll: {
       type: Boolean,
@@ -208,63 +208,63 @@ export default {
   // 处理布尔类型
   computed: {
     stripeFn: function () {
-      return this.stripe !== undefined
+      return this.stripe !== undefined;
     },
     borderFn: function () {
-      return this.border !== undefined
+      return this.border !== undefined;
     },
     highlightCurrentRowFn: function () {
-      return this.highlightCurrentRow !== undefined
+      return this.highlightCurrentRow !== undefined;
     },
     defaultExpandAllFn: function () {
-      return this.defaultExpandAll !== undefined
+      return this.defaultExpandAll !== undefined;
     },
   },
   mounted() {
-    console.log('colType', this.colType)
+    console.log("colType", this.colType);
   },
   methods: {
     showOverflowTooltip(val) {
       if (val === undefined) {
-        return true // 默认值
+        return true; // 默认值
       } else {
-        return val
+        return val;
       }
     },
 
     toggleRowSelection(row, selected) {
-      this.$refs.reTable.toggleRowSelection(row, selected)
+      this.$refs.reTable.toggleRowSelection(row, selected);
     },
 
     toggleAllSelection() {
-      this.$refs.reTable.toggleAllSelection()
+      this.$refs.reTable.toggleAllSelection();
       // this.store.commit('toggleAllSelection')
     },
 
     toggleRowExpansion(row, expanded) {
-      this.$refs.reTable.toggleRowExpansion(row, expanded)
+      this.$refs.reTable.toggleRowExpansion(row, expanded);
       // this.store.toggleRowExpansionAdapter(row, expanded)
     },
 
     clearSelection() {
-      this.$refs.reTable.clearSelection()
+      this.$refs.reTable.clearSelection();
     },
 
     setCurrentRow(row) {
-      this.$refs.reTable.setCurrentRow(row)
+      this.$refs.reTable.setCurrentRow(row);
       // this.store.commit('setCurrentRow', row)
     },
 
     clearSort() {
-      this.$refs.reTable.clearSort()
+      this.$refs.reTable.clearSort();
     },
 
     clearFilter(columnKeys) {
-      this.$refs.reTable.clearFilter(columnKeys)
+      this.$refs.reTable.clearFilter(columnKeys);
     },
 
     doLayout() {
-      this.$refs.reTable.doLayout()
+      this.$refs.reTable.doLayout();
       // if (this.shouldUpdateHeight) {
       //   this.layout.updateElsHeight()
       // }
@@ -272,11 +272,11 @@ export default {
     },
 
     sort(prop, order) {
-      this.$refs.reTable.sort(prop, order)
+      this.$refs.reTable.sort(prop, order);
       // this.store.commit('sort', { prop, order })
     },
   },
-}
+};
 </script>
 <style lang="scss" scoped>
 .wrap {
