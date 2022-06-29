@@ -14,36 +14,36 @@
 </template>
 <script>
 export default {
-  name: 'reCard',
+  name: "reCard",
   props: {
     width: {
       type: Number,
-      default: 0
+      default: 0,
     },
     imgSrc: {
       type: String,
-      default: ''
+      default: "",
     },
     imgHeight: {
       type: Number,
-      default: 0
+      default: 0,
     },
     summary: {
       type: String,
-      default: ''
+      default: "",
     },
     footer: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
   data() {
     return {
-      imgSrc2: ''
-    }
-  }
-}
+      imgSrc2: "",
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
-@import '../../style/reCard.scss';
+@import "../../style/reCard.scss";
 </style>

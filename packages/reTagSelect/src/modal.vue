@@ -18,31 +18,31 @@
 </template>
 <script>
 export default {
-  name: 'modal',
-  props: ['showDialog', 'title', 'multiple', 'collapseTags', 'clearable', 'selectList'],
+  name: "modal",
+  props: ["showDialog", "title", "multiple", "collapseTags", "clearable", "selectList"],
   data() {
     return {
-      selectVal: null
-    }
+      selectVal: null,
+    };
   },
 
   computed: {
     collapseTagsFn: function () {
-      return this.collapseTags !== undefined
+      return this.collapseTags !== undefined;
     },
     clearableFn: function () {
-      return this.clearable !== undefined
-    }
+      return this.clearable !== undefined;
+    },
   },
   methods: {
     close() {
-      this.$emit('close')
+      this.$emit("close");
     },
     changeFn(val) {
-      this.$emit('changeVal', val)
-    }
-  }
-}
+      this.$emit("changeVal", val);
+    },
+  },
+};
 </script>
 <style scoped>
 .el-select {
