@@ -1,8 +1,8 @@
 {
   "name": "vue-ele-ui",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "private": false,
-  "license": "ISC",
+  "license": "MIT",
   "author": {
     "name": "hanshao",
     "email": "840136611@qq.com",
